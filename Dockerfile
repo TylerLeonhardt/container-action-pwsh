@@ -1,7 +1,7 @@
-FROM alpine:3.10
+FROM mcr.microsoft.com/powershell:lts-alpine-3.10
 
 COPY LICENSE README.md /
 
-COPY entrypoint.sh /entrypoint.sh
+COPY entrypoint.ps1 /entrypoint.ps1
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["pwsh", "-Command", "/entrypoint.ps1"]

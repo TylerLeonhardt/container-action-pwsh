@@ -1,9 +1,10 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
+name: 'Container Action Template (PowerShell edition)'
+description: 'Get started with Container actions using PowerShell'
+author: 'TylerLeonhardt'
 inputs: 
   myInput:
     description: 'Input to use'
+    required: false
     default: 'world'
 runs:
   using: 'docker'
